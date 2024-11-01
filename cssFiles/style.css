@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Open Sans', arial;
+}
+
+/* sec 1 */
+.sec1 {
+    height: 750px;
+    background-image: url(../imgs/sec1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sec1 .container {
+    margin-top: 250px;
+    color: white;
+}
+
+.sec1 .container .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(25, 118, 210, 0.7);
+    inset: 0;
+    z-index: -1;
+}
+
+.sec1 .container p {
+    line-height: 1.5;
+}
+
+.sec1 .container p {
+    font-size: 25px;
+}
+
+.sec1 .container .p2 {
+    font-size: 60px;
+    padding: 15px 0;
+}
+
+.sec1 .container .btn {
+    padding: 20px 25px;
+    border: 0 solid #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 20px;
+}
+
+.sec1 .container .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.sec1 .container .btn1:hover {
+    opacity: .8;
+}
+
+
+/* sec 1 */
+
+
+/* sec 2 */
+
+.sec2 {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sec2 .h-text .h-p1 {
+    font-size: 40px;
+    opacity: .8;
+}
+
+.sec2 .h-text .h-p2 {
+    padding-top: 30px;
+    font-size: 20px;
+    opacity: .5;
+}
+
+
+.sec2 .cols {
+    padding-left: 100px;
+    padding-top: 70px;
+}
+
+.sec2 .cols .col {
+    width: 33.33%;
+    float: left;
+}
+
+.sec2 .cols .col .icon {
+    width: 10%;
+    float: left;
+    padding: 20px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.sec2 .cols .col .text {
+    width: 90%;
+    float: left;
+    text-align: left;
+    padding: 20px;
+}
+
+.sec2 .cols .col .text .p1 {
+    font-size: 18px;
+}
+
+.sec2 .cols .col .text .p2 {
+    font-size: 15px;
+    opacity: .5;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.sec2 .cols .col .item {
+    padding-top: 20px;
+}
+
+
+/* sec 2 */
+
+
+/* sec 3 */
+
+.sec3 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sec3 .item-text .p1 {
+    font-size: 30px;
+    opacity: .8;
+}
+
+.sec3 .item-text .p2 {
+    font-size: 18px;
+    opacity: .5;
+    padding-top: 25px;
+}
+
+.sec3 .item-text .pp {
+    padding-top: 60px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.sec3 .item-text .pp .p3 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.455);
+}
+
+.sec3 .item-text .p4 {
+    padding-left: 25px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.sec3 .item-text .p4:hover {
+    opacity: 1;
+}
+
+.sec3 .container .cards1 {
+    padding-top: 40px;
+}
+
+.sec3 .container .cards2 {
+    padding-top: 30px;
+}
+
+
+.sec3 .container .card1 {
+    width: 31.33%;
+    float: left;
+    margin: 10px;
+    border: 2px solid #f8f8f8;
+}
+
+.sec3 .container .card1 .textCard {
+    padding: 25px ;
+}
+
+.sec3 .container .card1 .pp1 {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.sec3 .container .card1 .pp1:hover {
+    color: rgba(0, 0, 255, 0.695);
+}
+
+.sec3 .container .card1 .pp2 {
+    font-size: 15px;
+    opacity: .5;
+    padding-top: 10px;
+}
+
+/* start overlay */
+.sec3 .img-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.sec3 .img-item .overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.458);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sec3 .img-item img {
+    transition: all 0.5s;
+}
+
+.sec3 .card1:hover .img-item .overlay {
+    opacity: 1;
+}
+
+.sec3 .card1:hover .img-item img {
+    transform: scale(1.1);
+}
+
+.sec3 .img-item .overlay .btnss {
+    position: relative;
+    top: 50%;
+    transform: translateY(10px);
+    transition: all .5s;
+}
+
+.sec3 .img-item .overlay .btnss i {
+    font-size: 20px;
+    padding-top: 7px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    opacity: .8;
+    line-height: 20px;
+    border-radius: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sec3 .img-item .overlay .btnss i:hover {
+    opacity: .4;
+}
+
+
+/* sec 3 */
+
+
+/* sec 4 */
+.sec4 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sec4 .item-text1 .p1 {
+    font-size: 30px;
+    opacity: .8;
+    padding-top: 30px;
+}
+
+.sec4 .item-text1 .p2 {
+    font-size: 18px;
+    opacity: .5;
+    padding-top: 25px;
+}
+.sec4 .item-text2 .col {
+    width: 31.33% ;
+    float: left;
+    text-align: left;
+    padding-top: 30px;
+    margin: 10px;
+}
+.sec4 .item-text2 .col .backP {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.sec4 .item-text2 .col .pp1 {
+    opacity: .8;
+    padding: 20px;
+}
+
+.sec4 .item-text2 .col .pp2 {
+    opacity: .7;
+    padding: 20px;
+}
+
+.sec4 .item-text2 .col .pp3 {
+    opacity: .5;
+    padding: 18px;
+    padding-top: 0;
+}
+
+
+/* sec 4 */
+
+/* sec 5 */
+.sec5 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.sec5 .container .text .p1 {
+    font-size: 30px;
+    opacity: .8;
+}
+
+.sec5 .container .text .p2 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    opacity: .7;
+}
+
+.sec5 .container .card1 {
+    width: 31.33%;
+    float: left;
+    margin: 10px;
+    border: 2px solid #f8f8f8;
+}
+
+.sec5 .container .card1 .textCard {
+    padding: 25px ;
+    text-align: left;
+}
+
+.sec5 .container .card1 .pp1 {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.sec5 .container .card1 .pp1:hover {
+    color: rgba(0, 0, 255, 0.695);
+}
+
+.sec5 .container .card1 .pp2 {
+    font-size: 15px;
+    opacity: .5;
+    padding-top: 10px;
+}
+
+.sec5 .container .card1 .pp3 {
+    font-size: 20px;
+    opacity: .7;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+.sec5 .container .card1 .pp4 {
+    font-size: 17px;
+    opacity: .6;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.sec5 .container .card1 .pp4:hover {
+    color: rgba(0, 0, 255, 0.695);
+}
+
+.sec5 .container .card1 .pp4 i {
+    padding-left: 10px;
+    transition: all .2s;
+}
+
+.sec5 .container .card1 .pp4:hover i {
+    padding-left: 20px;
+}
+/* sec 5 */
+
+
+/* sec 6 */
+.sec6 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.sec6 .container .text .p1 {
+    font-size: 35px;
+    opacity: .8;
+}
+
+.sec6 .container .text .p2 {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: .5;
+}
+
+
+.sec6 .container .btn {
+    padding: 20px 35px;
+    color: white;
+    border: 0 solid #fff;
+    background-color: #218fe6;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 10px;
+}
+
+.sec6 .container .btn:hover {
+    background-color: black;
+}
+/* sec 6 */
+
+
+/* sec 7 */
+.sec7 {
+    text-align: center;
+    padding: 70px 0;
+    background-color: rgba(0, 0, 0, 0.886);
+    overflow: hidden;
+}
+.sec7 .col {
+    text-align: left;
+    padding: 0 20px;
+    width: 33.333%;
+    float: left;
+    color: white;
+}
+
+
+.sec7 .container .p1 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.sec7 .col .ul1 {
+    padding-top: 30px;
+}
+
+.sec7 .col .p2 {
+    padding-top: 50px;
+    opacity: .5;
+    line-height: 1.7;
+}
+
+.sec7 .container .ul1 {
+    list-style-type: none;
+    line-height: 2;
+    opacity: .5;
+}
+
+.sec7 .container  .ul1 li i {
+    padding-right: 20px;
+}
+
+.sec7 .container .ul1 li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+    padding: 10px 0;
+}
+
+/* sec 7 */
+
+
+/* sec 8 */
+.sec8 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.912);
+    padding: 20px 0;
+}
+
+
+.sec8 .item-text p {
+    opacity: .5;
+    color: white;
+}
+
+.sec8 .container .icons i {
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+    line-height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    transition: all .5s;
+}
+
+.sec8 .container .icons .fa-brands:hover {
+    background-color: blue;
+}
+
+.sec8 .container .icons .fa-google:hover {
+    background-color: red;
+}
+
+/* sec 8 */
+
+
+/* media */
+
+
+@media screen and (max-width:1024px) {
+    .sec3 .container {
+        width: 60%;
+    }
+    .sec3 .container .card1 {
+        width: 100%;
+        float: left;
+        margin: 10px;
+        border: 2px solid #f8f8f8;
+    }
+    .sec3 .item-text .p1 {
+        font-size: 40px;
+    }
+    .sec3 .item-text .p2 {
+        font-size: 25px;
+    }    
+    .sec3 .item-text .pp {
+        font-size: 20px;
+    }
+    .sec3 .container .card1 .pp1 {
+        font-size: 30px;
+    }
+    .sec3 .container .card1 .pp2 {
+        font-size: 20px;
+    }
+    .sec4 .container {
+        width: 80%;
+    }
+    .sec4 .item-text2 .col {
+        width: 100% ;
+        float: left;
+        text-align: left;
+        padding-top: 30px;
+        margin: 10px;
+    }
+    .sec4 .item-text1 .p1 {
+        font-size: 40px;
+    }
+    
+    .sec4 .item-text1 .p2 {
+        font-size: 25px;
+    }
+    .sec4 .item-text2 .col .pp1 {
+        font-size: 20px;
+    }
+    
+    .sec4 .item-text2 .col .pp2 {
+        font-size: 17px;
+    }
+    
+    .sec4 .item-text2 .col .pp3 {
+        font-size: 16px;
+    }
+    .sec5 .container {
+        width: 60%;
+    }
+    .sec5 .container .card1 {
+        width: 100%;
+        float: left;
+        margin: 10px;
+        border: 2px solid #f8f8f8;
+    }
+}
+@media screen and (max-width:992px) {
+    /* nothing to do */
+}
+@media screen and (max-width:768px) {
+    .sec2 .h-text .h-p1 {
+        font-size: 35px;
+    }
+    .sec2 .h-text .h-p2 {
+        font-size: 17px;
+    }
+    .sec2 .cols .col {
+        width: 100%;
+        float: left;
+    }
+    .sec7 .col {
+        width: 100%;
+        float: left;
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:600px) {
+    .sec2 .h-text .h-p1 {
+        font-size: 30px;
+    }
+    .sec2 .h-text .h-p2 {
+        font-size: 13px;
+    }
+    .sec2 .cols .col {
+        width: 100%;
+        float: left;
+    }
+    .sec3 .item-text .p1 {
+        font-size: 30px;
+    }
+    .sec3 .item-text .p2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* media */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
